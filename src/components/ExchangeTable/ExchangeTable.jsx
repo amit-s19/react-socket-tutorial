@@ -27,7 +27,8 @@ function ExchangeTable() {
             apiResponse.data.result.forEach(el => {
                 tickerSymbols.push(el.symbol);
             })
-            const deltaSocket = new W3CWebSocket('wss://testnet-socket.delta.exchange');
+            // const deltaSocket = new W3CWebSocket('wss://testnet-socket.delta.exchange');
+            const deltaSocket = new W3CWebSocket('wss://production-esocket.delta.exchange');
             deltaSocket.onopen = () => {
                 deltaSocket.send(JSON.stringify({
                     "type": "subscribe",
