@@ -2,6 +2,7 @@
     padding-top: 50px;
     text-align: center;
     color: #FF5C8D;  
+    overflow: auto;
 }
 
 .container h5 {

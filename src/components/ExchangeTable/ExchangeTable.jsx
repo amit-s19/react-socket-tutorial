@@ -12,7 +12,7 @@ function ExchangeTable() {
 
     const [time, setTime] = useState(Date.now());
 
-    // UseEffect to update component every 0.5 seconds.
+    // UseEffect to update component every 0.5 seconds
     useEffect(() => {
         const interval = setInterval(() => setTime(Date.now()), 100);
         return () => {
@@ -60,8 +60,8 @@ function ExchangeTable() {
         <div className="container">
             <h1>React Socket Tutorial</h1>
             <h5>( Using Delta Exchange API )</h5>
-            <Table striped bordered hover variant="dark" responsive>
-                <thead>
+            <Table striped bordered hover variant="dark" responsive >
+                <thead id="tableId">
                     <tr>
                         <th>Symbol</th>
                         <th>Description</th>
@@ -87,3 +87,4 @@ function ExchangeTable() {
 }
 
 export default ExchangeTable;
+
